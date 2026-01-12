@@ -293,6 +293,9 @@ start_rootless_container() {
         --mount --uts --ipc --pid --net --cgroup \
         $CHROOT_BIN "$ROOTFS" /bin/sh -c "
             export PATH=/bin:/sbin:/usr/bin:/usr/sbin
+            if [ -f /etc/profile ]; then
+                . /etc/profile
+            fi
             
             # Setup filesystem mounts (persist in the mount namespace)
             mount -t proc proc /proc 2>/dev/null || true
@@ -372,7 +375,7 @@ main() {
     echo "To enter container:"
     echo "  nsenter --user -t $(cat $CONTAINER_ROOT/container.pid) \\"
     echo "    --mount --uts --ipc --pid --net --cgroup \\"
-    echo "    chroot $ROOTFS /bin/sh"
+    echo "    chroot $ROOTFS /bin/sh -l"
     echo ""
     echo "Press Ctrl+C to stop container"
 
