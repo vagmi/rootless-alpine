@@ -23,3 +23,4 @@
     - [Permission Conflicts](lessons/permissions.md)
 
 [Conclusion](conclusion.md)
+[License](LICENSE.md)

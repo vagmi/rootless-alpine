@@ -12,3 +12,7 @@ In this book, I dissect:
 - How containers are just fancy Linux processes.
 - The security implications of running as root vs. rootless.
 - The specific hurdles encountered when implementing this in a shell script.
+
+## License
+
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](LICENSE.md).
