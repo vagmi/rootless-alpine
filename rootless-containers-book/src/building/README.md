@@ -15,4 +15,4 @@ Building a rootless container involves four distinct phases:
 
 ## The Script
 
-I will reference my `rootless-alpine.sh` script throughout this section. Think of this script as my custom-built container engine - a tiny, 400-line version of Docker.
+I will reference my [`rootless-alpine.sh`](https://github.com/vagmi/rootless-alpine/blob/main/rootless-alpine.sh) script throughout this section. Think of this script as my custom-built container engine - a tiny, 400-line version of Docker.

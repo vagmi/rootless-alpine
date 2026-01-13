@@ -13,6 +13,11 @@ In this book, I dissect:
 - The security implications of running as root vs. rootless.
 - The specific hurdles encountered when implementing this in a shell script.
 
+## Resources
+
+*   **Source Code**: The script and book source are available at [https://github.com/vagmi/rootless-alpine](https://github.com/vagmi/rootless-alpine).
+*   **Hosted Book**: You are likely reading this at [https://rootless.vagmi.ca](https://rootless.vagmi.ca).
+
 ## License
 
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](LICENSE.md).
